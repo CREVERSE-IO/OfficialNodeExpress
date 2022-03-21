@@ -130,14 +130,50 @@ Primary use: Multipurpose Template
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'FuturaStd';
+    src: url('../webfonts/FuturaStd-Medium.woff2') format('woff2'),
+    url('../webfonts/FuturaStd-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaStd_alt';
+    src: url('../webfonts/FuturaStd-Medium.woff2') format('woff2'),
+    url('../webfonts/FuturaStd-Medium.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaStd-Bold';
+    src: url('../webfonts/FuturaStd-Bold.woff2') format('woff2'),
+    url('../webfonts/FuturaStd-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITCAvantGardeStd-XLt';
+    src: url('../webfonts/ITCAvantGardeStd-XLt.woff2') format('woff2'),
+    url('../webfonts/ITCAvantGardeStd-XLt.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 /* ==============================
    Common styles
    ============================== */
 :root{
     scroll-behavior: auto;
-    --font-global: HK_Grotesk, arial, sans-serif;
-    --font-global-alt: HK_Grotesk_alt, arial, sans-serif;
+    --font-global: FuturaStd, arial, sans-serif;
+    --font-global-alt: FuturaStd_alt, arial, sans-serif;
 }
 html{
     overflow-y: scroll;
@@ -375,8 +411,6 @@ img:not([draggable]), embed, object, video{
     transform: rotate(360deg);
   }
 }
-
-
 
 /* ==============================
    Typography
@@ -1378,9 +1412,10 @@ a.bg-video-button-muted{
 }
 .hs-line-4{
     margin-top: 0;
-    font-size: 26px;
-    line-height: 1.4;
-    font-weight: 400;    
+    font-size: 35px;
+    line-height: 1.0;
+    font-weight: 400;
+    letter-spacing: 0.0454545em;
 }
 .hs-line-5{
     margin-top: 0;
@@ -1400,10 +1435,11 @@ a.bg-video-button-muted{
 }
 .hs-line-7{
     margin-top: 0;
-    font-size: 72px;
+    font-size: 100px;
     font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
+    line-height: 1.0;
+    letter-spacing: 0.03em;
+    /*letter-spacing: -0.03em;*/
 }
 .hs-line-8{
     margin-top: 0;
@@ -1729,12 +1765,12 @@ html:not(.mobile) .wow-p{
     display: flex;
     align-items: center;
     max-width: 120px;
-    height: 70px;
+    height: 50px;
     -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 .nav-logo-wrap .logo img{
-    max-height: 100%;
+    max-height: 75%;
 }
 .nav-logo-wrap .logo:before,
 .nav-logo-wrap .logo:after{
@@ -2466,7 +2502,7 @@ a.logo:hover{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .partner-section
