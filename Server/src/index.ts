@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({
     extended : true
 }));
 
-app.use( "/", express.static( path.join( __dirname, "static" ) ) );
+app.use( "/", express.static( path.join( __dirname, "www" ) ) );
 app.get( "/hello", (req, res)=>{
     console.log("Hello");
 });
