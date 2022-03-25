@@ -16,6 +16,7 @@ const viewerConfig = {
 
 /* Wait for Adobe Document Services PDF Embed API to be ready */
 document.addEventListener("adobe_dc_view_sdk.ready", function () {
+    console.log("adobe_dc_view_sdk.ready");
     /* Initialize the AdobeDC View object */
     var adobeDCView = new AdobeDC.View({
         /* Pass your registered client id */
