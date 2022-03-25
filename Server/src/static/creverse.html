@@ -19,9 +19,8 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <link rel="stylesheet" href="css/style-responsive.css">
         <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/vertical-rhythm.min.css">
-        <link rel="stylesheet" href="css/previous/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/magnific-popup.css">
-        <link rel="stylesheet" href="css/YTPlayer.css">
 
     </head>
     <body class="appear-animate">
@@ -81,21 +80,16 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
             <!-- End Navigation panel -->
             
             <main id="main">
-
                 <!-- Home Section -->
-                <section class="home-section bg-dark-alfa-30 fixed-height-small" data-backgroundvideo="video/video.jpg" id="home">
-                    <div class="js-height-parent container">
-
-                        <div class="player" data-property="{videoURL:'https://youtu.be/MsVJdnpIB8A', coverImage: 'video/video.jpg', containment:'#home',autoPlay:true, loop:true, showControls:false, showYTLogo: false, mute:true, startAt:0, opacity:1}">
-                        </div>
-
+                <section class="home-section bg-dark-alfa-30 light-content relative" data-background="video/video.jpg" id="home">
+                    <div class="container min-height-90vh d-flex align-items-center pt-100 pb-100">
 
                         <!-- Video BG Init -->
-<!--                        <div class="bg-video-wrapper" id="video-background-1">-->
-<!--                            <video src= "video/video.mp4" class="bg-video" preload="auto" autoplay loop muted playsinline data-object-fit="cover">-->
-<!--                            </video>-->
-<!--                            <div class="bg-video-overlay bg-dark-alfa-50"></div>-->
-<!--                        </div>-->
+                        <div class="bg-video-wrapper" >
+                            <video src= "video/video.mp4" class="bg-video" preload="auto" autoplay loop muted playsinline data-object-fit="cover">
+                            </video>
+                            <div class="bg-video-overlay bg-dark-alfa-30"></div>
+                        </div>
                         <a href="#" role="button" class="bg-video-button-muted"><i class="fa fa-volume-off"></i></a>
                         <!-- End Video BG Init -->
 
@@ -115,13 +109,55 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                         <!-- End Hero Content -->
 
                         <!-- Scroll Down -->
-                        <div class="local-scroll">
-                            <a href="#about" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i><span class="sr-only">Scroll to the next section</span></a>
+                        <div class="local-scroll scroll-down-wrap wow fadeInUpShort" data-wow-offset="0">
+                            <a href="#about" class="scroll-down"><i class="scroll-down-icon"></i><span class="sr-only">Scroll to the next section</span></a>
                         </div>
                         <!-- End Scroll Down -->
 
                     </div>
                 </section>
+                <!-- End Home Section -->
+
+                <!-- Home Section -->
+<!--                <section class="home-section bg-dark-alfa-30 fixed-height-small" data-backgroundvideo="video/video.jpg" id="home">-->
+<!--                    <div class="js-height-parent container">-->
+
+<!--                        <div class="player" data-property="{videoURL:'https://youtu.be/MsVJdnpIB8A', coverImage: 'video/video.jpg', containment:'#home',autoPlay:true, loop:true, showControls:false, showYTLogo: false, mute:true, startAt:0, opacity:1}">-->
+<!--                        </div>-->
+
+
+<!--                        &lt;!&ndash; Video BG Init &ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="bg-video-wrapper" id="video-background-1">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <video src= "video/video.mp4" class="bg-video" preload="auto" autoplay loop muted playsinline data-object-fit="cover">&ndash;&gt;-->
+<!--&lt;!&ndash;                            </video>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="bg-video-overlay bg-dark-alfa-50"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--                        <a href="#" role="button" class="bg-video-button-muted"><i class="fa fa-volume-off"></i></a>-->
+<!--                        &lt;!&ndash; End Video BG Init &ndash;&gt;-->
+
+<!--                        &lt;!&ndash; Hero Content &ndash;&gt;-->
+<!--                        <div class="home-content">-->
+<!--                            <div class="home-text">-->
+<!--                                <img src="images/whatIsCreverse.png" width="700" alt="" />-->
+
+<!--                                <h1 class="hs-line-8 font-alt mb-50 mb-xs-30">-->
+<!--                                    Simply put,<br>-->
+<!--                                    'Decentralized Copy(right)-nomics'<br>-->
+<!--                                    for Co-creative work-->
+<!--                                </h1>-->
+
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; End Hero Content &ndash;&gt;-->
+
+<!--                        &lt;!&ndash; Scroll Down &ndash;&gt;-->
+<!--                        <div class="local-scroll">-->
+<!--                            <a href="#about" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i><span class="sr-only">Scroll to the next section</span></a>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; End Scroll Down &ndash;&gt;-->
+
+<!--                    </div>-->
+<!--                </section>-->
                 <!-- End Home Section -->
 
                 <!-- Section: Creverse Main Street -->
@@ -434,7 +470,6 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
         <script type="text/javascript" src="js/all.js"></script>
         <script type="text/javascript" src="js/contact-form.js"></script>
         <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
-        <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
         <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 
     </body>

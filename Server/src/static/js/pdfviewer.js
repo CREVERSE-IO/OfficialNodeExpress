@@ -30,7 +30,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
         content: {
             /* Location of file where it is hosted */
             location: {
-                url: "http://cre-verse.io:81/pdf/whitepaper.pdf",
+                url: "http://cre-verse.io/pdf/whitepaper.pdf",
                 /*
                 If the file URL requires some additional headers, then it can be passed as follows:-
                 header: [
