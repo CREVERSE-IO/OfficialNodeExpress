@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import path from "path";
 import {createTransport, Transporter } from "nodemailer";
 
-const port: number = 81;
+const port: number = 80;
 
 class App {
     public application: express.Application;
@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({
     extended : true
 }));
 
-app.use( "/", express.static( path.join( __dirname, "www" ) ) );
+app.use( "/", express.static( path.join( __dirname, "static" ) ) );
 app.get( "/hello", (req, res)=>{
     console.log("Hello");
 });
