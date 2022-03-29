@@ -24,7 +24,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
     adobeDCView.previewFile({
         content: {
             location: {
-                url: "http://cre-verse.io/pdf/whitepaper.pdf",
+                url: "https://www.cre-verse.io/pdf/whitepaper.pdf",
             },
         },
         metaData: {
