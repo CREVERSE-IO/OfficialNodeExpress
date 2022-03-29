@@ -23,8 +23,14 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use( "/", express.static( path.join( __dirname, "ver_1_01" ) ) );
-app.get( "/hello", (req, res)=>{
-    console.log("Hello");
+app.get("*", ( req, res, next )=>{
+    if ( req.secure == true ) {
+        next();
+
+    } else {
+        let to = "https://" + req.headers.host + req.url;
+        return res.redirect( to );
+    }
 });
 
 app.post("/reqMailer", (req, res) => {
