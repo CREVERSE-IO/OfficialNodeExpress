@@ -75,7 +75,7 @@ async function SendMail( content: any ) {
         secure: false,
         auth: {
             user: "creverse.contactus@gmail.com",
-            pass: "creverse!@34"
+            pass: "jkipnqohpyqhnfmq"
         }
     });
 
@@ -97,6 +97,7 @@ async function SendMail( content: any ) {
             html: description
         });
     } catch (e) {
+        console.log(e);
 
         return;
     }

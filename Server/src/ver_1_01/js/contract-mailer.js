@@ -23,6 +23,8 @@ $(document).ready(function(){
             proceed = false;
         }
 
+        console.log(user_name + user_email + user_message)
+
         if (proceed) {
             var profiles = {
                 'userName': user_name,
@@ -47,22 +49,6 @@ $(document).ready(function(){
                     $("#result").hide().html(output).slideDown();
                 }
             });
-
-
-
-            // $.post('contact_me.php', post_data, function(response){
-            //     if (response.type == 'error') {
-            //         output = '<div class="error">' + response.text + '</div>';
-            //     }
-            //     else {
-            //         output = '<div class="success">' + response.text + '</div>';
-            //         $('#contact_form input').val('');
-            //         $('#contact_form textarea').val('');
-            //     }
-            //
-            //     $("#result").hide().html(output).slideDown();
-            // }, 'json');
-
         }
 
         return false;
